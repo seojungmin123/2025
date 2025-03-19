@@ -3,13 +3,918 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gift:Mall</title>
+    <title>Gifts:Mall</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="wrap">
-        <header id="header"></header>
-        <main class="main"></main>
-        <footer id="footer"></footer>
+        <!-- 로딩애니메이션 -->
+        <!-- <div class="loading">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div> -->
+        <!-- 헤더 -->
+        <header id="header">
+            <div class="inner">
+                <a href="index.html"><h1 class="logo">GIFTS:MALL</h1></a>
+                <!-- 내비게이션 -->
+                <div class="nav">
+                    <ul class="main_memu">
+                        <li class="all"><a href="#">전체상품</a>
+                            <ul class="sub_memu">
+                                <li><a href="#">의류</a></li>
+                                <li><a href="#">액세서리</a></li>
+                                <li><a href="#">전자기기</a></li>
+                                <li><a href="#">기타</a></li>
+                            </ul>
+                        </li>
+                        <li class="popu"><a href="#">인기상품</a>
+                            <ul class="sub_memu">
+                                <li><a href="#">인기 의류</a></li>
+                                <li><a href="#">인기 액세서리</a></li>
+                                <li><a href="#">인기 전자기기</a></li>
+                            </ul>
+                        </li>
+                        <li class="notice"><a href="#">공지사항</a>
+                            <ul class="sub_memu">
+                                <li><a href="#">최근 공지사항</a></li>
+                                <li><a href="#">아카이브</a></li>
+                            </ul>
+                        </li>
+                        <li class="Partnership"><a href="#">제휴문의</a>
+                            <ul class="sub_memu">
+                                <li><a href="#">상품 입점 절차</a></li>
+                                <li><a href="#">파트너 제휴 문의</a></li>
+                                <li><a href="#">전자 계약 시스템</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 유틸메뉴 -->
+                <div class="util">
+                    <ul>
+                        <li><a class="sign up" href="#">로그인</a></li>
+                        <li><a class="create_account" href="#">회원가입</a></li>
+                        <li><a class="shopping" href="#">장바구니</a></li>
+                        <li><a class="manager" href="#">관리자</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="mega"></div>
+
+        <main class="main">
+            <!-- 이미지슬라이드 -->
+            <div class="slidebox">
+                <input type="radio" name="slide" id="slide1" checked>
+                <input type="radio" name="slide" id="slide2">
+                <input type="radio" name="slide" id="slide3">
+
+                    <ul class="slidelist">
+                        <li class="slideitem">
+                            <a href="#">
+                                <label for="slide3" class="left"></label>
+                                <img src="images/08.jpg" alt="슬라이드 이미지1">
+                                <label for="slide2" class="right"></label>
+                            </a>
+                        </li>
+                        <li class="slideitem">
+                            <a href="#">
+                                <label for="slide1" class="left"></label>
+                                <img src="images/26.jpg" alt="슬라이드 이미지2">
+                                <label for="slide3" class="right"></label>
+                            </a>
+                        </li>
+                        <li class="slideitem">
+                            <a href="#">
+                                <label for="slide2" class="left"></label>
+                                <img src="images/01.PNG" alt="슬라이드 이미지3">
+                                <label for="slide1" class="right"></label>
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+            <!-- 컨텐츠 -->
+            <div class="contents">
+                <div class="title_box">
+                    <h2>추천상품</h2>
+                </div>
+                <section class="sell_items_box"> 
+                    <div class="sell_items">
+                        <ul>
+                            <li>
+                                <input type="radio" name="tab" id="health" checked>
+                                <label for="health">건강식품</label>
+                                <div class="sell_con">
+                                    <ul>
+                                        <li>
+                                            <img src="images/sell/health/1.PNG" alt="건강식품1"> <br>
+                                            <h3>이뮨 멀티비타민&미네랄</h3>
+ 	                                        <p>국내 판매 1위 멀티비타민 이뮨 14일분에 이중제형 + 남/녀 맞춤설계 포뮬러를 적용한 신제품 <br><br>
+                                            
+                                            일반배송 :	2,500원 (20,000원 이상 무료배송) <br>
+                                            GIFTS카드 추가 10% 할인 <br>
+ 	                                        GiftsMall 포인트 최대 1% 적립 <big><del>75,000</del> <span>65,000원</span> </big>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="images/sell/health/2.PNG" alt="건강식품2"> <br>
+                                            <h3>센트룸</h3>
+ 	                                        <p>생기 넘치는 일상을 위한 센트룸 우먼 더블업. 비타민 B군 8종 함량 2배, 23가지 비타민과 미네랄, 한국인 여성 맞춤 영양 설계 <br><br>
+                                            
+                                            일반배송 :	2,500원 (20,000원 이상 무료배송) <br>
+                                            GIFTS카드 추가 10% 할인 <br>
+                                            GiftsMall 포인트 최대 1% 적립 <big> 27,000원 </big>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="images/sell/health/3.PNG" alt="건강식품3"> <br>
+                                            <h3>닥터브라이언</h3>
+ 	                                        <p>달콤한 청포도맛 구미로 맛있게 비타민 C와 D를 충전하세요. 활기찬 하루와 튼튼한 뼈 건강을 맛있게 충전하는 부드러운 젤리 타입 <br><br>
+                                            
+                                                일반배송 :	2,500원 (20,000원 이상 무료배송) <br>
+                                                GIFTS카드 추가 10% 할인 <br>
+                                                GiftsMall 포인트 최대 1% 적립 <big>2,000원</big>
+                                            </p>
+                                        </li>
+
+                                        <li>
+                                            <img src="images/sell/health/4.PNG" alt="건강식품4"> <br>
+                                            <h3>액티브 멀티포맨</h3>
+ 	                                        <p>미국판매 1위 내셔널 건강기능식품 브랜드. 남성 건강을 생각하는 22가지 주요 비타민&미네랄 <br><br>
+                                            
+                                            일반배송 :	2,500원 (20,000원 이상 무료배송) <br>
+                                            GIFTS카드 추가 10% 할인 <br>
+                                            GiftsMall 포인트 최대 1% 적립 <big>30,000원</big>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="images/sell/health/5.PNG" alt="건강식품5"> <br>
+                                            <h3>네이처메이드B12</h3>
+ 	                                        <p>여성 건강을 생각하는 23가지 주요 비타민&미네랄, 한국인 1일 영양 권장량을 고려한 철분, 엽산이 강화된 여성종합비타민 <br><br>
+                                            
+                                            일반배송 :	2,500원 (20,000원 이상 무료배송) <br>
+                                            GIFTS카드 추가 10% 할인 <br>
+                                            GiftsMall 포인트 최대 1% 적립 <big>30,000원</big>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="radio" name="tab" id="digital">
+                                <label for="digital">디지털</label>
+                                <div class="sell_con">
+                                    <ul>
+                                        <li>
+                                            <img src="images/sell/digital/1.PNG" alt="디지털1"> <br>
+                                            <h3>PANTONE PD충전 보조배터리</h3>
+ 	                                        <p>230g의 가벼운 무게로 휴대성 극대화, 3way 빌트인 케이블 채용, 10,000mAh의 대용량 배터리팩 내장 <br><br>
+                                            
+                                            일반배송 :	2,500원 (20,000원 이상 무료배송) <br>
+                                            GIFTS카드 추가 10% 할인 <br>
+                                            GiftsMall 포인트 최대 1% 적립 <big>24,400원</big>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="images/sell/digital/2.PNG" alt="디지털2"> <br>
+                                            <h3>Bowie D05 무선 블루투스 5.3 헤드셋</h3>
+ 	                                        <p>현실같은 3D사운드 스테이지 제공, 70시간의 오디오 재생시간, 2시간으로 완전 충전 <br><br>
+                                            
+                                            일반배송 :	2,500원 (20,000원 이상 무료배송) <br>
+                                            GIFTS카드 추가 10% 할인 <br>
+                                            GiftsMall 포인트 최대 1% 적립 <big>36,900원</big>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="images/sell/digital/3.PNG" alt="디지털3"> <br>
+                                            <h3>독거미 F99 기계식 키보드</h3>
+ 	                                        <p>최고의 퍼포먼스를 경험하게 해주는 키보드, 안정적인 무선 전송, 저소음 디자인, 일체형 실리콘 패드 디자인으로 소음 최소화, 프리미엄 PCB기판 채용으로 안정적이고 편안한 타건감 제공  <br><br>
+                                            
+                                            일반배송 :	2,500원 (20,000원 이상 무료배송) <br>
+                                            GIFTS카드 추가 10% 할인 <br>
+                                            GiftsMall 포인트 최대 1% 적립 <big>70,750원</big>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="images/sell/digital/4.jpg" alt="디지털4"> <br>
+                                            <h3>파이널마우스 스타라이트12 페가수스 미디엄</h3>
+ 	                                        <p>최첨단 펌웨어를 갖춘 업계 최고의 노르딕 RF 플랫폼 기반의 무선 기술 채용, 최대 20,000CPI 해상도를 갖춘 e스포츠 센서 채용 <br><br>
+                                            
+                                            일반배송 :	3,000원 (20,000원 이상 무료배송) <br>
+                                            GIFTS카드 추가 10% 할인 <br>
+                                            GiftsMall 포인트 최대 1% 적립 <big><del>1,254,000 </del> <span>1,128,600원</span></big>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="images/sell/digital/5.PNG" alt="디지털5"> <br>
+                                            <h3>보이저5200 블루투스 이어폰</h3>
+ 	                                        <p>4개의 마이크 탑재, 6중 바람차단, 강력한 노이즈 캔슬링, 공간의 소음을 최대로 줄여 최적의 업무 환경을 경험할 수 있습니다. <br><br>
+                                            
+                                            일반배송 :	2,500원 (20,000원 이상 무료배송) <br>
+                                            GIFTS카드 추가 10% 할인 <br>
+                                            GiftsMall 포인트 최대 1% 적립 <big>146,000원</big>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="radio" name="tab" id="fancy">
+                                <label for="fancy">팬시</label>
+                                <div class="sell_con">
+                                    <ul>
+                                        <li>
+                                            <img src="images/sell/fancy/1.PNG" alt="팬시1"> <br>
+                                            <h3>명품 자동 장우산</h3>
+ 	                                        <p>태풍에도 견디는 프리미엄 우드 장우산. 50개 이상 구매 시 손잡이 무료 각인 서비스 제공 <br><br>
+                                            
+                                            일반배송 :	2,500원 (20,000원 이상 무료배송) <br>
+                                            GIFTS카드 추가 10% 할인 <br>
+                                            GiftsMall 포인트 최대 1% 적립 <big>31,600원</big>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="images/sell/fancy/2.PNG" alt="팬시2"> <br>
+                                            <h3>14K 윙블링 원터치 링 귀걸이(주문제작)</h3>
+ 	                                        <p>언제나 당신의 일상에 '편안한 멋' 평범한 순간마저 매력을 돋보이게 만들어 줄 14K Daily Collection. 본 상품은 주문 제작으로 배송은 약 7~10일 정도 소요됩니다(주말 및 공휴일 제외). <br><br>
+                                            
+                                            일반배송 :	3,000원 (20,000원 이상 무료배송) <br>
+                                            GIFTS카드 추가 10% 할인 <br>
+                                            GiftsMall 포인트 최대 1% 적립 <big>250,000원</big>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="images/sell/fancy/3.PNG" alt="팬시3"> <br>
+                                            <h3>14K 윙블링 메르시 목걸이(주문제작)</h3>
+ 	                                        <p>언제나 변함없고 고급스러운 전체 14K 골드로 제작되어 소장 가치뿐만 아니라 우아한 아름다움을 선사합니다. 본 상품은 주문 제작으로 배송은 약 7~10일 정도 소요됩니다(주말 및 공휴일 제외).  <br><br>
+                                            
+                                            일반배송 :	3,000원 (20,000원 이상 무료배송) <br>
+                                            GIFTS카드 추가 10% 할인 <br>
+                                            GiftsMall 포인트 최대 1% 적립 <big>265,000원</big>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="images/sell/fancy/4.PNG" alt="팬시4"> <br>
+                                            <h3>게이밍 이어폰 VJJB NI</h3>
+ 	                                        <p>세계 1위 가성비 유선 이어폰. 듀얼 드라이버 기술로 완벽한 고품질 사운드와 교체가 가능한 분리형 커스텀 케이블 <br><br>
+                                            
+                                            일반배송 :	2,500원 (20,000원 이상 무료배송) <br>
+                                            GIFTS카드 추가 10% 할인 <br>
+                                            GiftsMall 포인트 최대 1% 적립 <big><del>38,900 </del> <span>28,900원</span></big>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="images/sell/fancy/5.PNG" alt="팬시5"> <br>
+                                            <h3>인스탁스 미니 에보</h3>
+ 	                                        <p>당신이 보는 세상을 보여주세요. 가장 혁신적인 프리미엄 클래식 하이브리드 카메라, 묵직한 세련됨이 돋보이는 mini Evo의 클래식 디자인을 만나보세요.<br><br>
+                                            
+                                            일반배송 :	3,000원 (20,000원 이상 무료배송) <br>
+                                            GIFTS카드 추가 10% 할인 <br>
+                                            GiftsMall 포인트 최대 1% 적립 <big>320,000원</big>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="radio" name="tab" id="perfume">
+                                <label for="perfume">향수</label>
+                                <div class="sell_con">
+                                    <ul>
+                                        <li>
+                                            <img src="images/sell/perfume/1.PNG" alt="향수1"> <br>
+                                            <h3>에스쁘아 솔리드 퍼퓸 4.2g</h3>
+ 	                                        <p>새벽 달빛 아래 달큰한 체리가 어지럽게 흩어진 자리, 새하얀 자스민이 코끝을 스치고 자유롭게 남는 풍부한 머스크 향의 고체 향수<br><br>
+                                            
+                                            일반배송 :	2,500원 (20,000원 이상 무료배송) <br>
+                                            GIFTS카드 추가 10% 할인 <br>
+                                            GiftsMall 포인트 최대 1% 적립 <big>26,000원</big>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="images/sell/perfume/2.PNG" alt="향수2"> <br>
+                                            <h3>호텔도슨 향수 오드퍼퓸 75ml</h3>
+ 	                                        <p>향긋하고 보드라운 마른 꽃과 나무 향 뒤로 낙엽이 타는 듯한 베티버 향이 퍼지는 스파이시 플로럴 향 <br><br>
+                                            
+                                            일반배송 :	2,500원 (20,000원 이상 무료배송) <br>
+                                            GIFTS카드 추가 10% 할인 <br>
+                                            GiftsMall 포인트 최대 1% 적립 <big>153,000원</big>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="images/sell/perfume/3.PNG" alt="향수3"> <br>
+                                            <h3>랑방 레 플레르 EDT 90ml</h3>
+ 	                                        <p>에너지 넘치고 빛나는 머스키 프루티 플로럴 향으로 부드러움과 반짝임의 완벽한 균형이 매력입니다.  <br><br>
+                                            
+                                            일반배송 :	2,500원 (20,000원 이상 무료배송) <br>
+                                            GIFTS카드 추가 10% 할인 <br>
+                                            GiftsMall 포인트 최대 1% 적립 <big>64,500원</big>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="images/sell/perfume/4.PNG" alt="향수4"> <br>
+                                            <h3>몽블랑 익스플로러 EDP 60ml</h3>
+ 	                                        <p>전 세계를 여행하는 탐험가의 향기. 에너제틱 베르가못에서 자연스러운 패출리로 이어지는 향의 여정(우디 레더리 아로마틱) <br><br>
+                                            
+                                            일반배송 :	2,500원 (20,000원 이상 무료배송) <br>
+                                            GIFTS카드 추가 10% 할인 <br>
+                                            GiftsMall 포인트 최대 1% 적립 <big><del>103,000 </del> <span>93,000원</span></big>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="images/sell/perfume/5.PNG" alt="향수5"> <br>
+                                            <h3>캘빈클라인 One EDT 50ml</h3>
+ 	                                        <p>남녀 모두에게 어울리는 현대적이며, 라이트한 향의 캘빈클라인 CK one 오 드 뚜왈렛. 상쾌하고 신선한 시트러스 계열의 향으로 편안하고 캐주얼한 향수<br><br>
+                                            
+                                            일반배송 :	2,500원 (20,000원 이상 무료배송) <br>
+                                            GIFTS카드 추가 10% 할인 <br>
+                                            GiftsMall 포인트 최대 1% 적립 <big>58,900원</big>
+                                            </p>
+                                        </li>
+                                    </ul>    
+                                </div>
+                            </li>
+                            <li>
+                                <input type="radio" name="tab" id="hair">
+                                <label for="hair">헤어케어</label>
+                                <div class="sell_con">
+                                    <ul>
+                                        <li>
+                                            <img src="images/sell/hair/1.PNG" alt="헤어1"> <br>
+                                            <h3>어노브 딥 데미지 트리트먼트 EX 더블</h3>
+ 	                                        <p>부드러움에 집착하다! 어노브 집착 헤어팩! 단백질 3,000% UP으로 완성하는 극손상모 솔루션<br><br>
+                                            
+                                            일반배송 :	2,500원 (20,000원 이상 무료배송) <br>
+                                            GIFTS카드 추가 10% 할인 <br>
+                                            GiftsMall 포인트 최대 1% 적립 <big>29,800원</big>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="images/sell/hair/2.PNG" alt="헤어2"> <br>
+                                            <h3>려 루트젠 여성맞춤 볼륨 탈모증상케어 샴퓨 353ml</h3>
+ 	                                        <p>근거있는 여성탈모 전문가 려 루트젠이 만든 촘촘탄탄 밀도탄력을 채우는 3D볼륨 탈모 샴푸. 부드럽고 향 좋은 약산성 비건 샴푸 <br><br>
+                                            
+                                            일반배송 :	2,500원 (20,000원 이상 무료배송) <br>
+                                            GIFTS카드 추가 10% 할인 <br>
+                                            GiftsMall 포인트 최대 1% 적립 <big>21,900원</big>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="images/sell/hair/3.PNG" alt="헤어3"> <br>
+                                            <h3>라보에이치 두피쿨링&노세범 샴푸 333ml</h3>
+ 	                                        <p>청량하게 리프레쉬-쿨링샴푸, 오래도록 뽀송뽀송-노세범샴푸, 두피장벽강화 특허기술-탈모증상 완화 기능성 샴푸<br><br>
+                                            
+                                            일반배송 :	2,500원 (20,000원 이상 무료배송) <br>
+                                            GIFTS카드 추가 10% 할인 <br>
+                                            GiftsMall 포인트 최대 1% 적립 <big>19,800원</big>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="images/sell/hair/4.PNG" alt="헤어4"> <br>
+                                            <h3>모로칸오일 헤어트리트먼트 100ml</h3>
+ 	                                        <p>헤어케어, 컨디셔닝, 스타일링, 피니시까지 모두 가능한 단 하나의 헤어 오일 트리트먼트<br><br>
+                                            
+                                            일반배송 :	2,500원 (20,000원 이상 무료배송) <br>
+                                            GIFTS카드 추가 10% 할인 <br>
+                                            GiftsMall 포인트 최대 1% 적립 <big><del>52,200 </del> <span>93,000원</span></big>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="images/sell/hair/5.PNG" alt="헤어5"> <br>
+                                            <h3>닥터포헤어 피토프레시 헤어쿨링 스프레이 150ml</h3>
+ 	                                        <p>열받아 예민해진 두피를 위한 즉각적인 두피 쿨링 솔루션. 온종일 느껴지는 상쾌함, 피토프레이 쿨링 스프레이<br><br>
+                                            
+                                            일반배송 :	2,500원 (20,000원 이상 무료배송) <br>
+                                            GIFTS카드 추가 10% 할인 <br>
+                                            GiftsMall 포인트 최대 1% 적립 <big><del>16,000</del><span>14,400원</span></big>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section> 
+                <div class="title_box">
+                    <h2>공지사항</h2>
+                </div>
+                <section class="notice_section">
+                    <div class="notice_box1">
+                        <input type="radio" name="notice" id="notice1" checked>
+                            <ul class="noticelist">
+                                <li class="noticeitem">
+                                        <table class="notice_table">
+                                            <thead>
+                                                <tr>
+                                                    <th class="th_category">유형</th>
+                                                    <th class="th_title">제목</th>
+                                                    <th class="th_date">공지일자</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>일반</td>
+                                                    <td>파주가람점 리뉴얼로 인한 영업 중단 안내</td>
+                                                    <td>2024.07.22</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>이벤트</td>
+                                                    <td><사적인TMI>EP.50 아비브 이벤트 당첨자 발표</td>
+                                                    <td>2024.07.16</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>일반</td>
+                                                    <td>하월곡점 폐점으로 인한 영업종료 안내</td>
+                                                    <td>2024.07.31</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>일반</td>
+                                                    <td>[공지] 개인정보 처리방침 개정 안내 (v11.7)</td>
+                                                    <td>2024.06.27</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>이벤트</td>
+                                                    <td>셔터브리티 3기 대상자 발표</td>
+                                                    <td>2024.06.18</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>이벤트</td>
+                                                    <td>[기프트몰라이브 - 기프트몰마켓 : 닥터지]이벤트 당첨자 발표</td>
+                                                    <td>2024.07.16</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="label_box">
+                                            <label for="notice6" class="left1"><</label>
+                                            1 / 6
+                                            <label for="notice2" class="right1">></label>
+                                        </div>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="notice_box2">
+                        <input type="radio" name="notice" id="notice2">
+                        <ul class="noticelist">
+                            <li class="noticeitem">
+                                    <table class="notice_table">
+                                        <thead>
+                                            <tr>
+                                                <th class="th_category">유형</th>
+                                                <th class="th_title">제목</th>
+                                                <th class="th_date">공지일자</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>이벤트</td>
+                                                <td>[기프트몰라이브 - 기프트몰마켓]이벤트 당첨자 발표</td>
+                                                <td>2024.07.30</td>
+                                            </tr>
+                                            <tr>
+                                                <td>이벤트</td>
+                                                <td>5월 [리액션 받으면 리워드 드려요] 이벤트 당첨자발표</td>
+                                                <td>2024.06.14</td>
+                                            </tr>
+                                            <tr>
+                                                <td>일반</td>
+                                                <td>포항장성점 리뉴얼로 인한 영업 중단 안내</td>
+                                                <td>2024.07.28</td>
+                                            </tr>
+                                            <tr>
+                                                <td>일반</td>
+                                                <td>현대아울렛가산점 리로케이션으로 인한 영업 중단 안내</td>
+                                                <td>2024.07.15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>이벤트</td>
+                                                <td><마이프레셔스 Vol.26 불레따리편> 이벤트 당첨자 발표</td>
+                                                <td>2024.07.12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>이벤트</td>
+                                                <td>24년 7월 <헬스+출석체크인> 이벤트 당첨자 공지</td>
+                                                <td>2024.08.08</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="label_box">
+                                        <label for="notice1" class="left1"><</label>
+                                        2 / 6
+                                        <label for="notice3" class="right1">></label>
+                                    </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="notice_box3">
+                        <input type="radio" name="notice" id="notice3">
+                        <ul class="noticelist">
+                            <li class="noticeitem">
+                                    <table class="notice_table">
+                                        <thead>
+                                            <tr>
+                                                <th class="th_category">유형</th>
+                                                <th class="th_title">제목</th>
+                                                <th class="th_date">공지일자</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>일반</td>
+                                                <td>양평점 리로케이션으로 인한 영업 중단 안내</td>
+                                                <td>2024.07.31</td>
+                                            </tr>
+                                            <tr>
+                                                <td>이벤트</td>
+                                                <td>현대백화점울산동구점 리뉴얼로 인한 영업 중단 안내</td>
+                                                <td>2024.07.27</td>
+                                            </tr>
+                                            <tr>
+                                                <td>일반</td>
+                                                <td>안산월피공원점 리뉴얼로 인한 영업 중단 안내</td>
+                                                <td>2024.07.15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>이벤트</td>
+                                                <td>7월 [기프트몰TV 보러갈래?] 이벤트 당첨자 발표</td>
+                                                <td>2024.08.07</td>
+                                            </tr>
+                                            <tr>
+                                                <td>이벤트</td>
+                                                <td><2406_컬러업 챌린지> 이벤트 당첨자 발표</td>
+                                                <td>2024.07.12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>일반</td>
+                                                <td>[공지] 개인정보 처리방침 개정 안내 (v11.8)</td>
+                                                <td>2024.07.25</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="label_box">
+                                        <label for="notice2" class="left1"><</label>
+                                        3 / 6
+                                        <label for="notice4" class="right1">></label>
+                                    </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="notice_box4">
+                        <input type="radio" name="notice" id="notice4">
+                        <ul class="noticelist">
+                            <li class="noticeitem">
+                                    <table class="notice_table">
+                                        <thead>
+                                            <tr>
+                                                <th class="th_category">유형</th>
+                                                <th class="th_title">제목</th>
+                                                <th class="th_date">공지일자</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>이벤트</td>
+                                                <td>[기프트몰세일라이브 - 구매응모]이벤트 당첨자 발표</td>
+                                                <td>2024.07.24</td>
+                                            </tr>
+                                            <tr>
+                                                <td>이벤트</td>
+                                                <td>[기프트몰라이브 - 쇼케이스 : 바이오힐보]이벤트 당첨자 발표</td>
+                                                <td>2024.07.23</td>
+                                            </tr>
+                                            <tr>
+                                                <td>일반</td>
+                                                <td>양주옥정점 리뉴얼로 인한 영업 중단 안내</td>
+                                                <td>2024.07.10</td>
+                                            </tr>
+                                            <tr>
+                                                <td>이벤트트</td>
+                                                <td>6월 [리액션 받으면 리워드 드려요] 이벤트 당첨자발표</td>
+                                                <td>2024.07.08</td>
+                                            </tr>
+                                            <tr>
+                                                <td>일반</td>
+                                                <td>[공지] 개인정보 처리방침 개정 안내 (v11.6)</td>
+                                                <td>2024.03.28</td>
+                                            </tr>
+                                            <tr>
+                                                <td>일반</td>
+                                                <td>[공지] 위치기반서비스 이용약관 개정 안내</td>
+                                                <td>2024.01.16</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="label_box">
+                                        <label for="notice3" class="left1"><</label>
+                                        4 / 6
+                                        <label for="notice5" class="right1">></label>
+                                    </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="notice_box5">
+                        <input type="radio" name="notice" id="notice5">
+                        <ul class="noticelist">
+                            <li class="noticeitem">
+                                    <table class="notice_table">
+                                        <thead>
+                                            <tr>
+                                                <th class="th_category">유형</th>
+                                                <th class="th_title">제목</th>
+                                                <th class="th_date">공지일자</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>일반</td>
+                                                <td>광양중마점 리뉴얼로 인한 영업 중단 안내</td>
+                                                <td>2024.07.07</td>
+                                            </tr>
+                                            <tr>
+                                                <td>일반</td>
+                                                <td>[공지] 고정형 영상정보처리기기 운영/관리 방침 개정 안내</td>
+                                                <td>2024.06.27</td>
+                                            </tr>
+                                            <tr>
+                                                <td>일반</td>
+                                                <td>딘토 이벤트 조기 종료 안내</td>
+                                                <td>2024.08.05</td>
+                                            </tr>
+                                            <tr>
+                                                <td>이벤트</td>
+                                                <td>5월 [그럼 해봐, 셔터브리티] 포스터 인증 당첨자 안내</td>
+                                                <td>2024.06.17</td>
+                                            </tr>
+                                            <tr>
+                                                <td>일반</td>
+                                                <td>청주 타운 리뉴얼로 인한 영업 중단 안내</td>
+                                                <td>2024.06.06</td>
+                                            </tr>
+                                            <tr>
+                                                <td>일반</td>
+                                                <td>[배송안내] 8/14(수)~8/15(목) 택배사 휴무 관련</td>
+                                                <td>2024.08.06</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="label_box">
+                                        <label for="notice4" class="left1"><</label>
+                                        5 / 6
+                                        <label for="notice6" class="right1">></label>
+                                    </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="notice_box6">
+                        <input type="radio" name="notice" id="notice6">
+                        <ul class="noticelist">
+                            <li class="noticeitem">
+                                    <table class="notice_table">
+                                        <thead>
+                                            <tr>
+                                                <th class="th_category">유형</th>
+                                                <th class="th_title">제목</th>
+                                                <th class="th_date">공지일자</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>일반</td>
+                                                <td>[공지] 위치기반서비스 이용약관 개정 안내</td>
+                                                <td>2024.05.31</td>
+                                            </tr>                                     
+                                        </tbody>
+                                    </table>
+                                    <div class="label_box">
+                                        <label for="notice5" class="left1"><</label>
+                                        6 / 6
+                                        <label for="notice1" class="right1">></label>
+                                    </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- 배너 -->
+                <div class="title_box">
+                    <h2>대한민국 No.1 / GIFTS:Mall</h2>
+                </div>
+                <section class="banner">
+                    <div class="banner_box">
+                        <ul>
+                            <a href="#">
+                                <li>
+                                    <img src="images/01.PNG" alt="img">
+                                        <b>상품입점/제휴문의</b>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li>
+                                    <img src="images/01.PNG" alt="img">
+                                        <b>문의결과조회</b>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li>
+                                    <img src="images/01.PNG" alt="img">
+                                        <b>전자계약시스템</b>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li>
+                                    <img src="images/01.PNG" alt="img">
+                                        <b>파트너시스템</b>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </section>
+                <!-- 입점 -->
+                <div class="title_box">
+                    <h2>입점 절차 안내</h2>
+                </div>
+                <section class="entry">
+                    <div class="entry_box1">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                <span>step.1</span>
+                                    <p>임시회원가입</p>
+                                    <img src="images/01.PNG" alt="img">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <span>step.2</span>
+                                    <p>온라인상담</p>
+                                    <img src="images/01.PNG" alt="img">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <span>step.3</span>
+                                    <p>방문상담</p>
+                                    <img src="images/01.PNG" alt="img">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <span>step.4</span>
+                                    <p>품평회</p>
+                                    <img src="images/01.PNG" alt="img">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <span>step.5</span>
+                                    <p>신용평가</p>
+                                    <img src="images/01.PNG" alt="img">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <span>step.6</span>
+                                    <p>계약체결</p>
+                                    <img src="images/01.PNG" alt="img">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="entry_box2">
+                        <ul>
+                            <li>
+                                <div class="step">
+                                    <span>Step1</span><br>
+                                    <strong>임시회원가입</strong>
+                                </div>
+                                <div class="step_text">
+                                    <p>
+                                        미거래 업체는 임시회원 가입/로그인 후 상담신청을 하실 수 있습니다.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step">
+                                    <span>Step2</span><br>
+                                    <strong>온라인상담</strong>
+                                </div>
+                                <div class="step_text">
+                                    <p>
+                                        GIFTS:Mall 입점/제휴를 위해서는 온라인 상담이 선행되어야 합니다. <br> 상담 문의 후 사이트를 통해 결과를 안내해 드립니다.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step">
+                                    <span>step3</span><br>
+                                    <strong>방문상담</strong>
+                                </div>
+                                <div class="step_text">
+                                    <p>
+                                        온라인 상담이 긍정적일 경우,<br> 담당MD/제휴담당자와 구체적인 상담을 진행하게 됩니다.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step">
+                                    <span>step4</span><br>
+                                    <strong>품평회</strong>
+                                </div>
+                                <div class="step_text">
+                                    <p>
+                                        공정한 평가를 위해 상품력, 기획력, 영업력, 판촉력 등의 항목을 <br>기준으로 내부 품평회를 진행합니다.
+
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step">
+                                    <span>step5</span><br>
+                                    <strong>신용평가</strong>
+                                </div>
+                                <div class="step_text">
+                                    <p>
+                                        입점확정 협력사의 경우 <br> 신뢰있는 거래를 위해 신용평가를 받고 있습니다.
+
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step">
+                                    <span>step6</span><br>
+                                    <strong>계약체결</strong>
+                                </div>
+                                <div class="step_text">
+                                    <p>
+                                        전자계약서(또는 수기계약서)를 통해 <br>거래계약서와 관련서류를 작성하시면 입점절차가 완료됩니다.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+        </main>
+        <footer id="footer">
+            <div class="footer_inner">
+                <div class="footer_right">
+                    <div class="logo">
+                        <h1>GIFTS:Mall</h1>
+                    </div>
+                    <div class="copy">
+                        COPYRIGHTⓒ
+                        <br> 2024 GIFTS:MALL KOREA INC. ALL RIGHTS RESERVED
+                    </div>
+                    <div class="sns_box">
+                        <div class="sns">
+                            <img src="images/sns/blog.png" alt="blog">
+                            <img src="images/sns/facebook.png" alt="facebook">
+                            <img src="images/sns/kakao.png" alt="kakao">
+                            <img src="images/sns/twit.png" alt="twit">
+                            <img src="images/sns/youtube.png" alt="youtube">
+                            <img src="images/sns/ajsh.png" alt="ajsh">
+                        </div>
+                    </div>
+                    <div class="info">
+                        (주)GIFTS:Mall | 사업자등록번호 : 809-81-01157 | 대표이사 황기영 <br>
+                        주소 : 서울특별시 용산구 한강대로 123, 40층 <br>
+                        본사 대표전화 : 02-123-4567 | GIFTS:Mall 가맹상담전화 : 02-123-4568 <br>
+                    </div>
+                    <hr>
+                    <div class="abcdef">
+                        개인정보처리방침 | 이용약관.법적고지 | 청소년보호방침 | 이메일무단수집거부 | 사이트맵 | 채용
+                    </div>
+                </div>
+                
+                <div class="footer_left">
+                    <div class="service">
+                        <b>고객센터 이용안내</b>
+                        
+                        - 온라인몰 고객센터 1580-8282
+
+                        - 매장고객센터 1577-8254
+
+                        고객센터 운영시간 [평일 09:00 - 18:00] 
+                        
+                        주말 및 공휴일은 1:1문의하기를 이용해주세요. 
+
+                        업무가 시작되면 바로 처리해드립니다.
+
+                    </div>
+                    <hr>
+                    <div class="bank">
+                        <b>지방은행구매안전서비스</b>
+
+                        GIFTS:Mall은 현금 결제한 금액에 대해 
+
+                        지방은행과 채무지급보증 계약을체결하여 
+                        
+                        안전한 거래를 보장하고 있습니다 서비스 가입사실 확인 >
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
