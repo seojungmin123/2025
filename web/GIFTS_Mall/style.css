@@ -68,7 +68,7 @@
         opacity: 0;
     }
 } */
- input[type=radio]{
+input[type=radio]{
     appearance: none;
  }
 .d{
@@ -147,7 +147,7 @@ header{
     z-index: 1;
     position: fixed;
     top: 100px;
-    border-bottom: 3px solid #282c37;
+    box-shadow: 0 2px 10px #00000050;
 }
 #wrap:has(.nav:hover) .mega{
     height: 243px;
@@ -325,9 +325,14 @@ label.right{
     width:100%; 
     height:50px;
     align-content: center;
-    border-radius: 10px;
-    border: 1px solid #282c37;
+    border-radius: 30px;
+    border: 1px solid #ddd;
     font-weight: bolder;
+color: #666;
+  }
+  .sell_items label:hover{
+    background-color: #fafafa;
+    color: #333;
   }
 .sell_items input{
     display:none;
@@ -360,7 +365,7 @@ label.right{
   }
   .sell_con li{
     width: 375px;
-    height: 525px;
+    height: 580px;
     position: relative;
     border-radius: 15px;
     background-color: #f4f5f9;
@@ -372,6 +377,7 @@ label.right{
     padding: 0 15px;
   }
   .sell_con h3{
+    height: 100px;
     padding: 15px 15px;
     font-size: 25px;
   }
@@ -586,7 +592,7 @@ label.right1{
 footer{
     width: 100%;
     height: 700px;
-    background-color: #d9e1e8;
+    background-color: #eee;
 }
 footer hr {
     color: #282c37;
