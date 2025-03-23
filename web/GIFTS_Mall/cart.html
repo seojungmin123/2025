@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifts:Mall</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <div id="wrap">
+        <!-- 로딩애니메이션 -->
+        <!-- <div class="loading">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div> -->
+        <!-- 헤더 -->
+        <header id="header">
+            <div class="inner">
+                <a href="index.html"><h1 class="logo"><img src="images/Untitled-1.png" alt="로고"></h1></a>
+                <!-- 내비게이션 -->
+                <div class="nav">
+                    <ul class="main_memu">
+                        <li class="all"><a href="introduce.html">소개</a>
+                            <ul class="sub_memu">
+                                <li><a href="introduce.html">회사소개</a></li>
+                                <li><a href="#">서비스안내</a></li>
+                                <li><a href="#">이용방법</a></li>
+                            </ul>
+                        </li>
+                        <li class="popu"><a href="all.html">판매상품</a>
+                            <ul class="sub_memu">
+                                <li><a href="all.html">전체상품</a></li>
+                                <li><a href="popular.html">인기상품</a></li>
+                                <li><a href="#">신상품</a></li>
+                            </ul>
+                        </li>
+                        <li class="notice"><a href="#">공지사항</a>
+                            <ul class="sub_memu">
+                                <li><a href="#">점검공지</a></li>
+                                <li><a href="#">일정안내</a></li>
+                                <li><a href="#">배송공지</a></li>
+                            </ul>
+                        </li>
+                        <li class="Partnership"><a href="#">제휴문의</a>
+                            <ul class="sub_memu">
+                                <li><a href="#">제휴문의안내</a></li>
+                                <li><a href="#">광고제휴</a></li>
+                                <li><a href="#">협력제안</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 유틸메뉴 -->
+                <div class="util">
+                    <ul>
+                        <li><a class="sign up" href="#">로그인</a></li>
+                        <li><a class="create_account" href="#">회원가입</a></li>
+                        <li><a class="shopping" href="cart.html">장바구니</a></li>
+                        <li><a class="manager" href="#">관리자</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="mega"></div>
+        <main>
+            <h1>장바구니</h1>
+            <div class="contents">
+                <hr>
+                <table class="cart_table">
+                    <thead>
+                        <tr>
+                            <th class="th_info">상품정보</th>
+                            <th class="th_count">수량</th>
+                            <th class="th_price">상품가격</th>
+                            <th class="th_delivery">배송정보</th>
+                            <th class="th_order">주문</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="td_info">
+                                    <div class="thumb">
+                                        <a href="#"><img src="images/sell/digital/3.PNG" alt="디지털3"></a>
+                                    </div>
+                                    <p><a href="#">독거미 F99 기계식 키보드</a>
+                                        <small>옵션변경</small>
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td_count">
+                                    <button>-</button>
+                                    <div class="number">1</div>
+                                    <button>+</button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td_price">
+                                    <p><b>70,750원</b></p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td_delivery">
+                                    <p>
+                                        무료배송 <br>
+                                        <del><small>2500원</small></del>
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td_order">
+                                    <button class="buy_btn">바로주문</button>
+                                    <button class="wish_btn">찜</button>
+                                    <button class="del_btn">삭제</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="td_info">
+                                    <div class="thumb">
+                                        <a href="#"><img src="images/sell/fancy/4.PNG" alt="팬시4"></a>
+                                    </div>
+                                    <p><a href="#">게이밍 이어폰 VJJB NI</a>
+                                        <small>옵션변경</small>
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td_count">
+                                    <button>-</button>
+                                    <div class="number">1</div>
+                                    <button>+</button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td_price">
+                                    <p>
+                                        <b>28,900원</b> <br>
+                                        <del><small>38,900원</small></del>
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td_delivery">
+                                    <p>
+                                        무료배송 <br>
+                                        <del><small>2500원</small></del>
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="td_order">
+                                    <button class="buy_btn">바로주문</button>
+                                    <button class="wish_btn">찜</button>
+                                    <button class="del_btn">삭제</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="amount_table">
+                    <thead>
+                        <tr>
+                            <th class="th_amount_price">총 상품금액</th>
+                            <th class="th_amount_price">총 할인금액</th>
+                            <th class="th_amount_price">총 배송비</th>
+                            <th class="th_amount_price">총 결제예정금액</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>109,650원<span>-</span></td>
+                            <td>10,000원<span>+</span></td>
+                            <td>0원<span>=</span></td>
+                            <td><strong>99,650원</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="order_button">주문하기</button>
+            </div>
+        </main>
+        <footer id="footer">
+            <div class="footer_inner">
+                <div class="footer_right">
+                    <div class="logo">
+                        <h1>GIFTS:Mall</h1>
+                    </div>
+                    <div class="copy">
+                        COPYRIGHTⓒ
+                        <br> 2024 GIFTS:MALL KOREA INC. ALL RIGHTS RESERVED
+                    </div>
+                    <div class="sns_box">
+                        <div class="sns">
+                            <img src="images/sns/blog.png" alt="blog">
+                            <img src="images/sns/facebook.png" alt="facebook">
+                            <img src="images/sns/kakao.png" alt="kakao">
+                            <img src="images/sns/twit.png" alt="twit">
+                            <img src="images/sns/youtube.png" alt="youtube">
+                            <img src="images/sns/ajsh.png" alt="ajsh">
+                        </div>
+                    </div>
+                    <div class="info">
+                        (주)GIFTS:Mall | 사업자등록번호 : 809-81-01157 | 대표이사 황기영 <br>
+                        주소 : 서울특별시 용산구 한강대로 123, 40층 <br>
+                        본사 대표전화 : 02-123-4567 | GIFTS:Mall 가맹상담전화 : 02-123-4568 <br>
+                    </div>
+                    <hr>
+                    <div class="abcdef">
+                        개인정보처리방침 | 이용약관.법적고지 | 청소년보호방침 | 이메일무단수집거부 | 사이트맵 | 채용
+                    </div>
+                </div>
+
+                <div class="footer_left">
+                    <div class="service">
+                        <b>고객센터 이용안내</b>
+
+                        - 온라인몰 고객센터 1580-8282
+                        - 매장고객센터 1577-8254
+                        고객센터 운영시간 [평일 09:00 - 18:00] 
+
+                        주말 및 공휴일은 1:1문의하기를 이용해주세요. 
+                        업무가 시작되면 바로 처리해드립니다.
+                    </div>
+                    <hr>
+                    <div class="bank">
+                        <b>지방은행구매안전서비스</b>
+                        GIFTS:Mall은 현금 결제한 금액에 대해 
+                        지방은행과 채무지급보증 계약을체결하여 
+
+                        안전한 거래를 보장하고 있습니다 서비스 가입사실 확인 >
+                    </div>
+                </div>
+            </div>
+        </footer>

@@ -209,158 +209,150 @@ main h1{
     text-align: center;
     padding: 100px 0;
 }
-.contents section{
-    margin-bottom: 200px;
-}
 .contents{
     width: 1440px;
     margin: 0 auto;
-}
-.sell_items_box{
-    height: 1300px;
-    position: relative;
-    background-color: #fff;
-}
-.sell_items > ul{
-    text-align: center;
+    height: 1200px;
     position: relative;
 }
-.sell_items > ul > li{
-    display:  inline-block;
-    text-align:center; 
-    background :#fff;
-    width: 200px;
-    padding: 40px;
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
 }
-.sell_items label{
-    display:block;
-    width:100%; 
-    height:50px;
-    align-content: center;
-    border-radius: 30px;
-    border: 1px solid #ddd;
-    font-weight: bolder;
-    color: #666;
-  }
-  .sell_items label:hover{
-    background-color: #fafafa;
-    color: #333;
-  }
-.sell_items input{
-    display:none;
-}
-.sell_items input:checked ~ label{
-  background:#282c37;
-  color: #fff;
-}
-.sell_items input:checked ~ .sell_con{
-  display:block;
-}
-.sell_con{
-  width: 100%;
-  display:none;
-  position: absolute;
-  left: 0;
-  top:100px;
-}
-.sell_con ul{
-  display: flex;
-  flex-wrap:wrap;
-  justify-content: center;
-}
-.sell_con img{
-  width: 375px;
-  height: 225px;
-  border-radius: 15px 15px 0 0;
-  object-fit: cover;
-}
-.sell_con li{
-  width: 375px;
-  height: 530px;
-  position: relative;
-  border-radius: 15px;
-  background-color: #f4f5f9;
-  color: #282c37;
-  margin: 40px;
-  text-align: left;
-  box-shadow: 0px 2px 10px #00000030;
-}
-.top_info{
-  width: 375px;
-  height: 300px;
-  position: relative;
-}
-.bot_info{
-  width: 375px;
-  height: 225px;
-  position: relative;
-  padding: 20px;               
-}
-.sale{
-  width: 60px;
-  height: 30px;
-  background-color: #e3f1ff;
-  text-align: center;
-  align-content: center;
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  border-radius: 40px;
-  color: #079ed2;
-  box-shadow: 0px 2px 8px #0000009d;
-}
-.sell_con h3{
-    line-height: 30px;
-    width: 340px;
-    font-size: 25px;
-    position: absolute;
-    left: 20px;
-    height: 75px;
-    margin-top: 8px;
-}
-.sell_con del{
-    color: #ccc;
-}
-.price1 span{
-    color: #ce2929;
+.cart_table{
+    width: 1440px;
     font-size: 18px;
-    font-weight: 600;
 }
-.price1,.price2{
+.th_info{
+    width: 40%;
+}
+.cart_table th{
+    width: 15%;
+    padding: 20px 0;
+    border-top: 2px solid black;
+    border-bottom: 1px solid black;
+}
+td{
+    text-align: center;
+    padding: 30px 0;
+}
+tr{
+    border-bottom: 1px solid #ccc;
+}
+.td_info{
     display: flex;
-    justify-content: space-between;
-    font-weight: 550;
+    justify-content: center;
 }
-.benefit{
-    margin-top: 8px;
-    position: absolute;
-    color: #aaa;
-    font-size: small;
+.td_info img{
+    width: 150px;
+    height: 150px;
+}
+.td_info p{
+    width: 300px;
+    margin-left: 20px;
+    align-content: center;
+    text-align: left;
+}
+.td_info small{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #888;
 }
 
-.cart{
-    width: 150px;
-    height: 50px;
-    color: #079ed2;
-    border: 1px solid #079ed2;
-    border-radius: 10px;
-    text-align: center;
-    align-content: center;
-    position: absolute;
-    bottom: 15px;
-    left: 30px;
+.number {
+    width: 30px;
+    height: 30px;
 }
-.buy{
-    width: 150px;
-    height: 50px;
-    color: #fff;
-    border-radius: 10px;
-    text-align: center;
-    align-content: center;
-    background-color: #079ed2;
+.td_count{
+    display: flex;
+    justify-content: center;
+}
+.td_count button{
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+}
+td del{
+    color: #888;
+}
+.td_delivery p{
+    color: blue;
+}
+.td_order{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.td_order button{
+    width: 100px;
+    height: 40px;
+    margin: 5px 0;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.buy_btn{
+    border: #079ed2 1px solid;
+    color: #079ed2;
+}
+.wish_btn{
+    border: #555 1px solid;
+    color: #444;
+}
+.del_btn{
+    border: #555 1px solid;
+    color: #444;
+}
+.amount_table{
+    margin-top: 200px;
+    width: 1440px;
+    font-size: 18px;
+}
+.amount_table th{
+    width: 25%;
+    padding: 20px 0;
+    border-top: 2px solid black;
+    border-bottom: 1px solid #ccc;
+}
+.amount_table td{
+    font-size: 23px;
+    font-weight: 600;
+    height: 150px;
+    position: relative;
+}
+.amount_table td span{
+    width: 36px;
+    height: 36px;
+    background-color: #eee;
     position: absolute;
-    bottom: 15px;
-    right: 30px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    color: #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.amount_table strong{
+    color: #ce2929;
+}
+.order_button{
+    margin-top: 50px;
+    width: 175px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #079ed2;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.order_button:hover{
+    opacity: 0.8;
 }
 /* 푸터 */
 footer{
