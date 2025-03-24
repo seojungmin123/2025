@@ -32,6 +32,7 @@
     background-color: #00000033;
     border-radius: 50%;
     animation: loading 1s 0s linear 3;
+    pointer-events: none;
     opacity: 0;
 }
 .loading span:nth-child(1){
