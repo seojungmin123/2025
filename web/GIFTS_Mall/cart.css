@@ -332,7 +332,6 @@ td del{
     color: #777;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 .amount_table strong{
     color: #ce2929;
