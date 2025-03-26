@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifts:Mall</title>
+    <link rel="stylesheet" href="all.css">
+</head>
+<body>
+    <div id="wrap">
+        <!-- 로딩애니메이션 -->
+        <!-- <div class="loading">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div> -->
+        <!-- 헤더 -->
+        <header id="header">
+            <div class="inner">
+                <a href="index.html"><h1 class="logo"><img title="로고" src="images/logo2.png" alt="로고"></h1></a>
+                <!-- 내비게이션 -->
+                <div class="nav">
+                    <ul class="main_memu">
+                        <li class="all">
+                            <a href="introduce.html">소개</a>
+                            <div class="underline"></div>
+                            <ul class="sub_memu">
+                                <li><a href="introduce.html">회사소개</a></li>
+                                <li><a href="#">서비스안내</a></li>
+                                <li><a href="#">이용방법</a></li>
+                            </ul>
+                        </li>
+                        <li class="popu"><a href="all.html">판매상품</a>
+                            <div class="underline"></div>
+                            <ul class="sub_memu">
+                                <li><a href="all.html">전체상품</a></li>
+                                <li><a href="popular.html">인기상품</a></li>
+                                <li><a href="#">신상품</a></li>
+                            </ul>
+                        </li>
+                        <li class="notice"><a href="#">공지사항</a>
+                            <div class="underline"></div>
+                            <ul class="sub_memu">
+                                <li><a href="#">점검공지</a></li>
+                                <li><a href="#">일정안내</a></li>
+                                <li><a href="#">배송공지</a></li>
+                            </ul>
+                        </li>
+                        <li class="Partnership"><a href="#">제휴문의</a>
+                            <div class="underline"></div>
+                            <ul class="sub_memu">
+                                <li><a href="#">제휴문의안내</a></li>
+                                <li><a href="#">광고제휴</a></li>
+                                <li><a href="#">협력제안</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 유틸메뉴 -->
+                <div class="util">
+                    <ul>
+                        <li><a class="sign up" href="#">로그인</a></li>
+                        <li><a class="create_account" href="#">회원가입</a></li>
+                        <li><a class="shopping" href="cart.html">장바구니</a></li>
+                        <li><a class="manager" href="#">관리자</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="mega"></div>
+        <main>
+            <h1>전체상품</h1>
+            <div class="contents">
+                <section class="sell_items_box"> 
+                    <div class="sell_items">
+                        <hr>
+                        <ul>
+                            <li>
+                                <input type="radio" name="tab" id="health" checked>
+                                <label for="health">건강식품</label>
+                                <div class="sell_con">
+                                    <ul>
+                                        <li>
+                                            <div class="top_info">
+                                                <img src="images/sell/health/1.PNG" alt="건강식품1"> <br>
+                                                <div class="sale"><b>SALE</b></div>
+                                                <h3>이뮨 멀티비타민&미네랄</h3>
+                                            </div>
+                                            <div class="bot_info">
+                                                <div class="price1">
+                                                    <p>가격</p>
+                                                    <p><del>75,000원</del> <span>65,000원</span></p>
+                                                </div>
+                                                <div class="price2">
+                                                    <p>배송비</p>
+                                                    <p>2500원</p>
+                                                </div>                                                
+                                                <div class="benefit">
+                                                    <p>
+                                                        2만원 이상 구매시 무료배송 <br>
+                                                        GIFTS카드 추가 10% 할인 <br>
+                                                        GiftsMall 포인트 최대 1% 적립
+                                                    </p>
+                                                </div>
+                                                <a href="#"><div class="cart">장바구니담기</div></a>
+                                                <a href="#"><div class="buy">구매하기</div></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="top_info">
+                                                <img src="images/sell/health/2.PNG" alt="건강식품2"> <br>
+                                                <h3>센트룸</h3>
+                                            </div>
+                                            <div class="bot_info">
+                                                <div class="price1">
+                                                    <p>가격</p>
+                                                    <p><span>27,000원</span></p>
+                                                </div>
+                                                <div class="price2">
+                                                    <p>배송비</p>
+                                                    <p>2500원</p>
+                                                </div>
+                                                <div class="benefit">
+                                                    <p>
+                                                        2만원 이상 구매시 무료배송 <br>
+                                                        GIFTS카드 추가 10% 할인 <br>
+                                                        GiftsMall 포인트 최대 1% 적립
+                                                    </p>
+                                                </div>
+                                                <a href="#"><div class="cart">장바구니담기</div></a>
+                                                <a href="#"><div class="buy">구매하기</div></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="top_info">
+                                                <img src="images/sell/health/3.PNG" alt="건강식품3"> <br>
+                                                <h3>닥터브라이언</h3>
+                                            </div>
+                                            <div class="bot_info">
+                                                <div class="price1">
+                                                    <p>가격</p>
+                                                    <p><span>2,000원</span></p>
+                                                </div>
+                                                <div class="price2">
+                                                    <p>배송비</p>
+                                                    <p>2500원</p>
+                                                </div>
+                                                <div class="benefit">
+                                                    <p>
+                                                        2만원 이상 구매시 무료배송 <br>
+                                                        GIFTS카드 추가 10% 할인 <br>
+                                                        GiftsMall 포인트 최대 1% 적립
+                                                    </p>
+                                                </div>
+                                                <a href="#"><div class="cart">장바구니담기</div></a>
+                                                <a href="#"><div class="buy">구매하기</div></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="top_info">
+                                                <img src="images/sell/health/4.PNG" alt="건강식품4"> <br>
+                                                <h3>액티브 멀티포맨</h3>
+                                            </div>
+                                            <div class="bot_info">
+                                                <div class="price1">
+                                                    <p>가격</p>
+                                                    <p><span>30,000원</span></p>
+                                                </div>
+                                                <div class="price2">
+                                                    <p>배송비</p>
+                                                    <p>2500원</p>
+                                                </div>
+                                                <div class="benefit">
+                                                    <p>
+                                                        2만원 이상 구매시 무료배송 <br>
+                                                        GIFTS카드 추가 10% 할인 <br>
+                                                        GiftsMall 포인트 최대 1% 적립
+                                                    </p>
+                                                </div>
+                                                <a href="#"><div class="cart">장바구니담기</div></a>
+                                                <a href="#"><div class="buy">구매하기</div></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="top_info">
+                                                <img src="images/sell/health/5.PNG" alt="건강식품5"> <br>
+                                                <h3>네이처메이드B12</h3>
+                                            </div>
+                                            <div class="bot_info">
+                                                <div class="price1">
+                                                    <p>가격</p>
+                                                    <p><span>30,000원</span></p>
+                                                </div>
+                                                <div class="price2">
+                                                    <p>배송비</p>
+                                                    <p>2500원</p>
+                                                </div>
+                                                <div class="benefit">
+                                                    <p>
+                                                        2만원 이상 구매시 무료배송 <br>
+                                                        GIFTS카드 추가 10% 할인 <br>
+                                                        GiftsMall 포인트 최대 1% 적립
+                                                    </p>
+                                                </div>
+                                                <a href="#"><div class="cart">장바구니담기</div></a>
+                                                <a href="#"><div class="buy">구매하기</div></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="radio" name="tab" id="digital">
+                                <label for="digital">디지털</label>
+                                <div class="sell_con">
+                                    <ul>
+                                        <li>
+                                            <div class="top_info">
+                                                <img src="images/sell/digital/4.jpg" alt="디지털4"> <br>
+                                                <div class="sale"><b>SALE</b></div>
+                                                <h3>파이널마우스 스타라이트12 페가수스 미디엄</h3>
+                                            </div>
+                                            <div class="bot_info">
+                                                <div class="price1">
+                                                    <p>가격</p>
+                                                    <p><del>1,254,000원</del> <span>1,128,600원</span></p>
+                                                </div>
+                                                <div class="price2">
+                                                    <p>배송비</p>
+                                                    <p>2500원</p>
+                                                </div>
+                                                <div class="benefit">
+                                                    <p>
+                                                        2만원 이상 구매시 무료배송 <br>
+                                                        GIFTS카드 추가 10% 할인 <br>
+                                                        GiftsMall 포인트 최대 1% 적립
+                                                    </p>
+                                                </div>
+                                                <a href="#"><div class="cart">장바구니담기</div></a>
+                                                <a href="#"><div class="buy">구매하기</div></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="top_info">
+                                                <img src="images/sell/digital/1.PNG" alt="디지털1"> <br>
+                                                <h3>PANTONE PD충전 보조배터리</h3>
+                                            </div>
+                                            <div class="bot_info">
+                                                <div class="price1">
+                                                    <p>가격</p>
+                                                    <p><span>24,400원</span></p>
+                                                </div>
+                                                <div class="price2">
+                                                    <p>배송비</p>
+                                                    <p>2500원</p>
+                                                </div>
+                                                <div class="benefit">
+                                                    <p>
+                                                        2만원 이상 구매시 무료배송 <br>
+                                                        GIFTS카드 추가 10% 할인 <br>
+                                                        GiftsMall 포인트 최대 1% 적립
+                                                    </p>
+                                                </div>
+                                                <a href="#"><div class="cart">장바구니담기</div></a>
+                                                <a href="#"><div class="buy">구매하기</div></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="top_info">
+                                                <img src="images/sell/digital/2.PNG" alt="디지털2"> <br>
+                                                <h3>Bowie D05 무선 블루투스 5.3 헤드셋</h3>
+                                            </div>
+                                            <div class="bot_info">
+                                                <div class="price1">
+                                                    <p>가격</p>
+                                                    <p><span>36,900원</span></p>
+                                                </div>
+                                                <div class="price2">
+                                                    <p>배송비</p>
+                                                    <p>2500원</p>
+                                                </div>
+                                                <div class="benefit">
+                                                    <p>
+                                                        2만원 이상 구매시 무료배송 <br>
+                                                        GIFTS카드 추가 10% 할인 <br>
+                                                        GiftsMall 포인트 최대 1% 적립
+                                                    </p>
+                                                </div>
+                                                <a href="#"><div class="cart">장바구니담기</div></a>
+                                                <a href="#"><div class="buy">구매하기</div></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="top_info">
+                                                <img src="images/sell/digital/3.PNG" alt="디지털3"> <br>
+                                                <h3>독거미 F99 기계식 키보드</h3>
+                                            </div>
+                                            <div class="bot_info">
+                                                <div class="price1">
+                                                    <p>가격</p>
+                                                    <p><span>70,750원</span></p>
+                                                </div>
+                                                <div class="price2">
+                                                    <p>배송비</p>
+                                                    <p>2500원</p>
+                                                </div>
+                                                <div class="benefit">
+                                                    <p>
+                                                        2만원 이상 구매시 무료배송 <br>
+                                                        GIFTS카드 추가 10% 할인 <br>
+                                                        GiftsMall 포인트 최대 1% 적립
+                                                    </p>
+                                                </div>
+                                                <a href="#"><div class="cart">장바구니담기</div></a>
+                                                <a href="#"><div class="buy">구매하기</div></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="top_info">
+                                                <img src="images/sell/digital/5.PNG" alt="디지털5"> <br>
+                                                <h3>보이저5200 블루투스 이어폰</h3>
+                                            </div>
+                                            <div class="bot_info">
+                                                <div class="price1">
+                                                    <p>가격</p>
+                                                    <p><span>146,000원</span></p>
+                                                </div>
+                                                <div class="price2">
+                                                    <p>배송비</p>
+                                                    <p>2500원</p>
+                                                </div>
+                                                <div class="benefit">
+                                                    <p>
+                                                        2만원 이상 구매시 무료배송 <br>
+                                                        GIFTS카드 추가 10% 할인 <br>
+                                                        GiftsMall 포인트 최대 1% 적립
+                                                    </p>
+                                                </div>
+                                                <a href="#"><div class="cart">장바구니담기</div></a>
+                                                <a href="#"><div class="buy">구매하기</div></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="radio" name="tab" id="fancy">
+                                <label for="fancy">팬시</label>
+                                <div class="sell_con">
+                                    <ul>
+                                        <li>
+                                            <div class="top_info">
+                                                <img src="images/sell/fancy/4.PNG" alt="팬시4"> <br>
+                                                <div class="sale"><b>SALE</b></div>
+                                                <h3>게이밍 이어폰 VJJB NI</h3>
+                                            </div>
+                                            <div class="bot_info">
+                                                <div class="price1">
+                                                    <p>가격</p>
+                                                    <p><del>38,900원</del> <span>28,900원</span></p>
+                                                </div>
+                                                <div class="price2">
+                                                    <p>배송비</p>
+                                                    <p>2500원</p>
+                                                </div>
+                                                <div class="benefit">
+                                                    <p>
+                                                        2만원 이상 구매시 무료배송 <br>
+                                                        GIFTS카드 추가 10% 할인 <br>
+                                                        GiftsMall 포인트 최대 1% 적립
+                                                    </p>
+                                                </div>
+                                                <a href="#"><div class="cart">장바구니담기</div></a>
+                                                <a href="#"><div class="buy">구매하기</div></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="top_info">
+                                                <img src="images/sell/fancy/1.PNG" alt="팬시1"> <br>
+                                                <h3>명품 자동 장우산</h3>
+                                            </div>
+                                            <div class="bot_info">
+                                                <div class="price1">
+                                                    <p>가격</p>
+                                                    <p><span>31,600원</span></p>
+                                                </div>
+                                                <div class="price2">
+                                                    <p>배송비</p>
+                                                    <p>2500원</p>
+                                                </div>
+                                                <div class="benefit">
+                                                    <p>
+                                                        2만원 이상 구매시 무료배송 <br>
+                                                        GIFTS카드 추가 10% 할인 <br>
+                                                        GiftsMall 포인트 최대 1% 적립
+                                                    </p>
+                                                </div>
+                                                <a href="#"><div class="cart">장바구니담기</div></a>
+                                                <a href="#"><div class="buy">구매하기</div></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="top_info">
+                                                <img src="images/sell/fancy/2.PNG" alt="팬시2"> <br>
+                                                <h3>14K 윙블링 원터치 링 귀걸이(주문제작)</h3>
+                                            </div>
+                                            <div class="bot_info">
+                                                <div class="price1">
+                                                    <p>가격</p>
+                                                    <p><span>250,000원</span></p>
+                                                </div>
+                                                <div class="price2">
+                                                    <p>배송비</p>
+                                                    <p>3000원</p>
+                                                </div>
+                                                <div class="benefit">
+                                                    <p>
+                                                        2만원 이상 구매시 무료배송 <br>
+                                                        GIFTS카드 추가 10% 할인 <br>
+                                                        GiftsMall 포인트 최대 1% 적립
+                                                    </p>
+                                                </div>
+                                                <a href="#"><div class="cart">장바구니담기</div></a>
+                                                <a href="#"><div class="buy">구매하기</div></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="top_info">
+                                                <img src="images/sell/fancy/3.PNG" alt="팬시3"> <br>
+                                                <h3>14K 윙블링 메르시 목걸이(주문제작)</h3>
+                                            </div>
+                                            <div class="bot_info">
+                                                <div class="price1">
+                                                    <p>가격</p>
+                                                    <p><span>265,000원</span></p>
+                                                </div>
+                                                <div class="price2">
+                                                    <p>배송비</p>
+                                                    <p>3000원</p>
+                                                </div>
+                                                <div class="benefit">
+                                                    <p>
+                                                        2만원 이상 구매시 무료배송 <br>
+                                                        GIFTS카드 추가 10% 할인 <br>
+                                                        GiftsMall 포인트 최대 1% 적립
+                                                    </p>
+                                                </div>
+                                                <a href="#"><div class="cart">장바구니담기</div></a>
+                                                <a href="#"><div class="buy">구매하기</div></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="top_info">
+                                                <img src="images/sell/fancy/5.PNG" alt="팬시5"> <br>
+                                                <h3>인스탁스 미니 예보</h3>
+                                            </div>
+                                            <div class="bot_info">
+                                                <div class="price1">
+                                                    <p>가격</p>
+                                                    <p><span>320,600원</span></p>
+                                                </div>
+                                                <div class="price2">
+                                                    <p>배송비</p>
+                                                    <p>2500원</p>
+                                                </div>
+                                                <div class="benefit">
+                                                    <p>
+                                                        2만원 이상 구매시 무료배송 <br>
+                                                        GIFTS카드 추가 10% 할인 <br>
+                                                        GiftsMall 포인트 최대 1% 적립
+                                                    </p>
+                                                </div>
+                                                <a href="#"><div class="cart">장바구니담기</div></a>
+                                                <a href="#"><div class="buy">구매하기</div></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="radio" name="tab" id="perfume">
+                                <label for="perfume">향수</label>
+                                <div class="sell_con">
+                                    <ul>
+                                        <li>
+                                            <div class="top_info">
+                                                <img src="images/sell/perfume/4.PNG" alt="향수4"> <br>
+                                                <div class="sale"><b>SALE</b></div>
+                                                <h3>몽블랑 익스플로러 EDP 60ml</h3>
+                                            </div>
+                                            <div class="bot_info">
+                                                <div class="price1">
+                                                    <p>가격</p>
+                                                    <p><del>103,000</del> <span>93,000원</span></p>
+                                                </div>
+                                                <div class="price2">
+                                                    <p>배송비</p>
+                                                    <p>2500원</p>
+                                                </div>
+                                                <div class="benefit">
+                                                    <p>
+                                                        2만원 이상 구매시 무료배송 <br>
+                                                        GIFTS카드 추가 10% 할인 <br>
+                                                        GiftsMall 포인트 최대 1% 적립
+                                                    </p>
+                                                </div>
+                                                <a href="#"><div class="cart">장바구니담기</div></a>
+                                                <a href="#"><div class="buy">구매하기</div></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="top_info">
+                                                <img src="images/sell/perfume/1.PNG" alt="향수1"> <br>
+                                                <h3>에스쁘아 솔리드 퍼퓸 4.2g</h3>
+                                            </div>
+                                            <div class="bot_info">
+                                                <div class="price1">
+                                                    <p>가격</p>
+                                                    <p><span>26,000원</span></p>
+                                                </div>
+                                                <div class="price2">
+                                                    <p>배송비</p>
+                                                    <p>2500원</p>
+                                                </div>
+                                                <div class="benefit">
+                                                    <p>
+                                                        2만원 이상 구매시 무료배송 <br>
+                                                        GIFTS카드 추가 10% 할인 <br>
+                                                        GiftsMall 포인트 최대 1% 적립
+                                                    </p>
+                                                </div>
+                                                <a href="#"><div class="cart">장바구니담기</div></a>
+                                                <a href="#"><div class="buy">구매하기</div></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="top_info">
+                                                <img src="images/sell/perfume/2.PNG" alt="향수2"> <br>
+                                                <h3>호텔도슨 향수 오드퍼퓸 75ml</h3>
+                                            </div>
+                                            <div class="bot_info">
+                                                <div class="price1">
+                                                    <p>가격</p>
+                                                    <p><span>153,000원</span></p>
+                                                </div>
+                                                <div class="price2">
+                                                    <p>배송비</p>
+                                                    <p>2500원</p>
+                                                </div>
+                                                <div class="benefit">
+                                                    <p>
+                                                        2만원 이상 구매시 무료배송 <br>
+                                                        GIFTS카드 추가 10% 할인 <br>
+                                                        GiftsMall 포인트 최대 1% 적립
+                                                    </p>
+                                                </div>
+                                                <a href="#"><div class="cart">장바구니담기</div></a>
+                                                <a href="#"><div class="buy">구매하기</div></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="top_info">
+                                                <img src="images/sell/perfume/3.PNG" alt="향수3"> <br>
+                                                <h3>랑방 레 플레르 EDT 90ml</h3>
+                                            </div>
+                                            <div class="bot_info">
+                                                <div class="price1">
+                                                    <p>가격</p>
+                                                    <p><span>64,500원</span></p>
+                                                </div>
+                                                <div class="price2">
+                                                    <p>배송비</p>
+                                                    <p>2500원</p>
+                                                </div>
+                                                <div class="benefit">
+                                                    <p>
+                                                        2만원 이상 구매시 무료배송 <br>
+                                                        GIFTS카드 추가 10% 할인 <br>
+                                                        GiftsMall 포인트 최대 1% 적립
+                                                    </p>
+                                                </div>
+                                                <a href="#"><div class="cart">장바구니담기</div></a>
+                                                <a href="#"><div class="buy">구매하기</div></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="top_info">
+                                                <img src="images/sell/perfume/5.PNG" alt="향수5"> <br>
+                                                <h3>캘빈클라인 One EDT 60ml</h3>
+                                            </div>
+                                            <div class="bot_info">
+                                                <div class="price1">
+                                                    <p>가격</p>
+                                                    <p><span>58,800원</span></p>
+                                                </div>
+                                                <div class="price2">
+                                                    <p>배송비</p>
+                                                    <p>2500원</p>
+                                                </div>
+                                                <div class="benefit">
+                                                    <p>
+                                                        2만원 이상 구매시 무료배송 <br>
+                                                        GIFTS카드 추가 10% 할인 <br>
+                                                        GiftsMall 포인트 최대 1% 적립
+                                                    </p>
+                                                </div>
+                                                <a href="#"><div class="cart">장바구니담기</div></a>
+                                                <a href="#"><div class="buy">구매하기</div></a>
+                                            </div>
+                                        </li>
+                                    </ul>    
+                                </div>
+                            </li>
+                            <li>
+                                <input type="radio" name="tab" id="hair">
+                                <label for="hair">헤어케어</label>
+                                <div class="sell_con">
+                                    <ul>
+                                        <li>
+                                            <div class="top_info">
+                                                <img src="images/sell/hair/5.PNG" alt="헤어5"> <br>
+                                                <div class="sale"><b>SALE</b></div>
+                                                <h3>닥터포헤어 피토프레시 헤어쿨링 스프레이 150ml</h3>
+                                            </div>
+                                            <div class="bot_info">
+                                                <div class="price1">
+                                                    <p>가격</p>
+                                                    <p><del>16,000원</del> <span>14,400원</span></p>
+                                                </div>
+                                                <div class="price2">
+                                                    <p>배송비</p>
+                                                    <p>2500원</p>
+                                                </div>
+                                                <div class="benefit">
+                                                    <p>
+                                                        2만원 이상 구매시 무료배송 <br>
+                                                        GIFTS카드 추가 10% 할인 <br>
+                                                        GiftsMall 포인트 최대 1% 적립
+                                                    </p>
+                                                </div>
+                                                <a href="#"><div class="cart">장바구니담기</div></a>
+                                                <a href="#"><div class="buy">구매하기</div></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="top_info">
+                                                <img src="images/sell/hair/2.PNG" alt="헤어2"> <br>
+                                                <h3>려 루트젠 여성맞춤 볼륨 탈모증상케어 샴퓨 353ml</h3>
+                                            </div>
+                                            <div class="bot_info">
+                                                <div class="price1">
+                                                    <p>가격</p>
+                                                    <p><span>21,900원</span></p>
+                                                </div>
+                                                <div class="price2">
+                                                    <p>배송비</p>
+                                                    <p>2500원</p>
+                                                </div>
+                                                <div class="benefit">
+                                                    <p>
+                                                        2만원 이상 구매시 무료배송 <br>
+                                                        GIFTS카드 추가 10% 할인 <br>
+                                                        GiftsMall 포인트 최대 1% 적립
+                                                    </p>
+                                                </div>
+                                                <a href="#"><div class="cart">장바구니담기</div></a>
+                                                <a href="#"><div class="buy">구매하기</div></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="top_info">
+                                                <img src="images/sell/hair/3.PNG" alt="헤어3"> <br>
+                                                <h3>라보에이치 두피쿨링&노세범 샴푸 333ml</h3>
+                                            </div>
+                                            <div class="bot_info">
+                                                <div class="price1">
+                                                    <p>가격</p>
+                                                    <p><span>19,800원</span></p>
+                                                </div>
+                                                <div class="price2">
+                                                    <p>배송비</p>
+                                                    <p>2500원</p>
+                                                </div>
+                                                <div class="benefit">
+                                                    <p>
+                                                        2만원 이상 구매시 무료배송 <br>
+                                                        GIFTS카드 추가 10% 할인 <br>
+                                                        GiftsMall 포인트 최대 1% 적립
+                                                    </p>
+                                                </div>
+                                                <a href="#"><div class="cart">장바구니담기</div></a>
+                                                <a href="#"><div class="buy">구매하기</div></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="top_info">
+                                                <img src="images/sell/hair/4.PNG" alt="헤어4"> <br>
+                                                <h3>모로칸오일 헤어트리트먼트 100ml</h3>
+                                            </div>
+                                            <div class="bot_info">
+                                                <div class="price1">
+                                                    <p>가격</p>
+                                                    <p><span>52,200원</span></p>
+                                                </div>
+                                                <div class="price2">
+                                                    <p>배송비</p>
+                                                    <p>2500원</p>
+                                                </div>
+                                                <div class="benefit">
+                                                    <p>
+                                                        2만원 이상 구매시 무료배송 <br>
+                                                        GIFTS카드 추가 10% 할인 <br>
+                                                        GiftsMall 포인트 최대 1% 적립
+                                                    </p>
+                                                </div>
+                                                <a href="#"><div class="cart">장바구니담기</div></a>
+                                                <a href="#"><div class="buy">구매하기</div></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="top_info">
+                                                <img src="images/sell/hair/1.PNG" alt="헤어1"> <br>
+                                                <h3>어노브 딥 데미지 트리트먼트 EX 더블</h3>
+                                            </div>
+                                            <div class="bot_info">
+                                                <div class="price1">
+                                                    <p>가격</p>
+                                                    <p><span>29,800원</span></p>
+                                                </div>
+                                                <div class="price2">
+                                                    <p>배송비</p>
+                                                    <p>2500원</p>
+                                                </div>
+                                                <div class="benefit">
+                                                    <p>
+                                                        2만원 이상 구매시 무료배송 <br>
+                                                        GIFTS카드 추가 10% 할인 <br>
+                                                        GiftsMall 포인트 최대 1% 적립
+                                                    </p>
+                                                </div>
+                                                <a href="#"><div class="cart">장바구니담기</div></a>
+                                                <a href="#"><div class="buy">구매하기</div></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section> 
+            </div>
+        </main>
+        <!-- 푸터 -->
+        <footer id="footer">
+            <div class="footer_inner">
+                <div class="footer_right">
+                    <h1 class="logo"><img title="로고" src="images/logo2.png" alt="로고"></h1>
+                    <div class="copy">
+                        COPYRIGHTⓒ
+                        <br> 2024 GIFTS:MALL KOREA INC. ALL RIGHTS RESERVED
+                    </div>
+                    <div class="sns_box">
+                        <div class="sns">
+                            <img src="images/sns/blog.png" alt="blog">
+                            <img src="images/sns/facebook.png" alt="facebook">
+                            <img src="images/sns/kakao.png" alt="kakao">
+                            <img src="images/sns/twit.png" alt="twit">
+                            <img src="images/sns/youtube.png" alt="youtube">
+                            <img src="images/sns/ajsh.png" alt="ajsh">
+                        </div>
+                    </div>
+                    <div class="info">
+                        (주)GIFTS:Mall | 사업자등록번호 : 809-81-01157 | 대표이사 황기영 <br>
+                        주소 : 서울특별시 용산구 한강대로 123, 40층 <br>
+                        본사 대표전화 : 02-123-4567 | GIFTS:Mall 가맹상담전화 : 02-123-4568 <br>
+                    </div>
+                    <hr>
+                    <div class="abcdef">
+                        개인정보처리방침 | 이용약관.법적고지 | 청소년보호방침 | 이메일무단수집거부 | 사이트맵 | 채용
+                    </div>
+                </div>
+                
+                <div class="footer_left">
+                    <div class="service">
+                        <b>고객센터 이용안내</b>
+                        
+                        - 온라인몰 고객센터 1580-8282
+
+                        - 매장고객센터 1577-8254
+
+                        고객센터 운영시간 [평일 09:00 - 18:00] 
+                        
+                        주말 및 공휴일은 1:1문의하기를 이용해주세요. 
+
+                        업무가 시작되면 바로 처리해드립니다.
+
+                    </div>
+                    <hr>
+                    <div class="bank">
+                        <b>지방은행구매안전서비스</b>
+
+                        GIFTS:Mall은 현금 결제한 금액에 대해 
+
+                        지방은행과 채무지급보증 계약을체결하여 
+                        
+                        안전한 거래를 보장하고 있습니다 서비스 가입사실 확인 >
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
