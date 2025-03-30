@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gifts:Mall</title>
     <link rel="stylesheet" href="all.css">
+    <script src="all.js"></script>
+    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
 </head>
 <body>
     <div id="wrap">
@@ -68,6 +70,26 @@
             </div>
         </header>
         <div class="mega"></div>
+        <div class="video-container">
+            <video id="video" src="AD.mp4" muted></video>
+        
+            <!-- 숨기기 버튼을 비디오와 별도로 위치시키기 -->
+            <button class="toggle-btn" onclick="toggleControls()"><i class="fa fa-bars"></i></button> 
+        
+            <div class="controls">
+                <button onclick="playVideo()"><i class="fa fa-play"></i></button>
+                <button onclick="pauseVideo()"><i class="fa fa-pause"></i></button>
+                <button onclick="stopVideo()"><i class="fa fa-square"></i></button>
+                <button onclick="rewindVideo()">⏪ 10s</button>
+                <button onclick="fastForwardVideo()">10s ⏩</button>
+                <button onclick="slowDownVideo()">-0.1s</button>
+                <button onclick="speedUpVideo()">+0.1s</button>
+                <button onclick="resetSpeed()">속도초기화</button>
+                <button onclick="toggleLoop()">루프</button>
+                <button onclick="toggleAutoplay()">자동재생</button>
+            </div>
+        </div>
+        
         <main>
             <h1>전체상품</h1>
             <div class="contents">

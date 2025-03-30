@@ -1,43 +1,80 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head> 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="test.css">
-    <script src="test.js"></script>
+    <title>전체상품 페이지</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .video-container {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+        }
+        video {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .controls {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            gap: 5px;
+        }
+        .controls button {
+            color: white;
+            background: none;
+            border: 1px solid white;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <div id="wrap">
-        <div class="motto_container">
-            <div class="motto_box">
-                <div id="motto1" class="motto" style="--backposition: 0;">    
-                    <div class="motto_text">
-                        <h1>행복신뢰</h1>
-                    </div>
-                </div>
-                <div id="motto2" class="motto" style="--backposition: -240px;">
-                    <div class="motto_text">
-                        <h1>가치나눔</h1>
-                    </div>
-                </div>
-                <div id="motto3" class="motto" style="--backposition: -480px;">
-                    <div class="motto_text">
-                        <h1>환경선도</h1>
-                    </div>
-                </div>
-                <div id="motto4" class="motto" style="--backposition: -720px;">
-                    <div class="motto_text">
-                        <h1>미래혁신</h1>
-                    </div>
-                </div>
-                <div id="motto5" class="motto" style="--backposition: -960px;">
-                    <div class="motto_text">
-                        <h1>정보보안</h1>
-                    </div>
-                </div>
-            </div>
+    <div class="video-container">
+        <video id="video" src="AD.mp4"></video>
+        <div class="controls">
+            <button onclick="playVideo()">재생</button>
+            <button onclick="pauseVideo()">일시정지</button>
+            <button onclick="stopVideo()">정지</button>
+            <button onclick="rewindVideo()">⬅️ 10초</button>
+            <button onclick="fastForwardVideo()">10초 ➡️</button>
+            <button onclick="slowDownVideo()">-속도</button>
+            <button onclick="speedUpVideo()">+속도</button>
+            <button onclick="resetSpeed()">속도 원래대로</button>
+            <button onclick="toggleControls()">컨트롤러 보이기/숨기기</button>
+            <button onclick="toggleLoop()">반복 켜기/끄기</button>
+            <button onclick="toggleAutoplay()">자동재생 켜기/끄기</button>
         </div>
     </div>
+    
+    <script>
+        const video = document.getElementById("video");
+        let isAutoplay = false;
+        
+        function playVideo() { video.play(); }
+        function pauseVideo() { video.pause(); }
+        function stopVideo() { video.pause(); video.currentTime = 0; }
+        function rewindVideo() { video.currentTime -= 10; }
+        function fastForwardVideo() { video.currentTime += 10; }
+        function slowDownVideo() { video.playbackRate = Math.max(0.1, video.playbackRate - 0.1); }
+        function speedUpVideo() { video.playbackRate += 0.1; }
+        function resetSpeed() { video.playbackRate = 1; }
+        function toggleLoop() { video.loop = !video.loop; }
+        function toggleAutoplay() { isAutoplay = !isAutoplay; video.autoplay = isAutoplay; }
+        function toggleControls() { video.controls = !video.controls; }
+    </script>
 </body>
 </html>
