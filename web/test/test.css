@@ -1,0 +1,31 @@
+.process-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    flex-wrap: wrap;
+     max-width: 1100px; 
+}
+
+.step { 
+    width: 250px; 
+    height: 120px;
+    padding: 20px; 
+    border-radius: 10px; 
+    color: white; 
+    text-align: center; 
+    transition: transform 0.3s;
+    position: relative;
+    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 10% 50%, 0 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+.step:hover { transform: scale(1.05); }
+.step1 { background: #4CAF50; }
+.step2 { background: #2196F3; }
+.step3 { background: #FF9800; }
+.step4 { background: #D32F2F; }
+.step h2 { font-size: 18px; margin-bottom: 5px; font-weight: bold; }
+.step p { font-size: 12px; max-width: 200px; }
