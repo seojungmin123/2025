@@ -10,65 +10,6 @@ a{
     display: inline-block;
     color: inherit;
 }
-/* 로딩애니메이션 */
-.loading{
-    position: fixed;
-    top:0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    background-color: #fff;
-    z-index: 9999;
-    animation: fadeout 6s;
-    opacity: 0;
-    pointer-events: none;
-}
-.loading span{
-    width: 40px;
-    height: 40px;
-    margin: 0 10px;
-    border-radius: 50%;
-    animation: loading 1s 0s linear 3;
-    opacity: 0;
-}
-.loading span:nth-child(1){
-    animation-delay: 0s;
-    background-color: red;
-}
-.loading span:nth-child(2){
-    animation-delay: 0.2s;
-    background-color: orange;
-}
-.loading span:nth-child(3){
-    animation-delay: 0.4s;
-    background-color: greenyellow;
-}
-@keyframes loading{
-    0%,
-    100%{
-        opacity: 0;
-        transform: scale(0.5);
-    }
-    50%{
-        opacity: 1;
-        transform: scale(1.2);
-    }
-}
-@keyframes fadeout {
-    0% {
-        opacity: 1;
-    }
-    25%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-    }
-}
-/* 헤더 */
 header{
     width: 100%;
     height: 100px;
@@ -256,8 +197,8 @@ nav{
 }
 
 /* 타이틀 */
-section{
-    margin-bottom: 100px;
+main{
+    height: 10000px;
 }
 .title{
     margin: 0 auto;
@@ -281,7 +222,7 @@ section{
 
 /* 추천상품 */
 .category_section{
-    background-color: #f7f7f7;
+    background-color: #f1f1f1;
 }
 .category{
     width: 1440px;
@@ -303,10 +244,9 @@ section{
 }
 .sell_con{
     width: 450px;
-    height: 600px;
+    height: 550px;
     background-color: #fff;
     transition: 0.3s ease-in-out;
-    position: relative;
 }
 .sell_con img{
     width: 100%;
@@ -359,18 +299,14 @@ del{
     transform: translateY(-2%);
 }
 .btn_box{
-    width: 100%;
     text-align: center;
-    position: absolute;
-    bottom: 0;
-    padding: 40px 0;
-    left: 50%;
-    transform: translateX(-50%);
+    padding: 20px;    
 }
 .buy,.cart{
-    width: 150px;
+    width: 125px;
     height: 50px;
     border: 1px solid #079ed2;
+    margin: 0 25px;
     transition: 0.3s;
 }
 .buy{
@@ -384,171 +320,4 @@ del{
 .buy:hover, .cart:hover{
     opacity: 0.8;
     transform: scale(1.05);
-}
-
-/* 공지사항 */
-.notice{
-    width: 1440px;
-    margin: 0 auto;
-    border-top: 2px solid #bbb;
-    border-bottom: 2px solid #bbb;
-}
-.notice th{
-    padding: 25px 0;
-    font-size: 22px;
-}
-.th_category, .th_date{
-    width: 15%;
-}
-.th_title{
-    width: 70%;
-}
-.notice td{
-    padding: 25px 0;
-    text-align: center;
-    border-top: 1px solid #bbb;
-}
-.notice td:nth-child(2){
-    text-align: left;
-}
-.notice td:nth-child(2) a:hover{
-    text-decoration: underline;
-}
-.notice_btn{
-    text-align: center;
-    padding: 25px;
-    width: 125px;
-    font-size: 22px;
-    margin: 0 auto;
-    color: #888;
-    position: relative;
-}
-.notice_btn a:first-child{
-    color: #000;
-    text-decoration: underline #888;
-}
-.notice_left, .notice_right{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-}
-.notice_left{
-    left: 0;
-}
-.notice_right{
-    right: 0;
-}
-
-/* 배너 */
-
-.banner_section{
-    background-color: #f7f7f7;
-}
-.banner{
-    width: 1440px;
-    margin: 0 auto;
-}
-.banner ul{
-    display: flex;
-    justify-content: space-between;
-    padding: 150px 0;
-}
-.banner li{
-    width: 300px;
-    height: 300px;
-    background-color: #079ed2;
-    color: #fff;
-    position: relative;
-}
-.banner i{
-    font-size: 125px;
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.banner b{
-    text-align: center;
-    width: 300px;
-    font-size: 25px;
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-/* 입점절차 */
-.entry{
-    width: 1440px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.step{
-    padding: 0 100px;
-    width: 280px;
-    height: 250px;
-    background-color: #079ed2;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 20px 0;
-    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 10% 50%, 0 0);
-    transition: 0.3s;
-
-}
-.step h2{
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-.step1{ background-color: #079ed2;}
-.step2{ background-color: #068cbf;}
-.step3{ background-color: #057aad;}
-.step4{ background-color: #04689b;}
-.step5{ background-color: #035689;}
-.step6{ background-color: #024477;}
-.step:hover{
-    transform: scale(1.05);
-}
-/* 푸터 */
-footer{
-    background-color: #eee;
-}
-.footer_inner{
-    width: 1440px;
-    margin: 0 auto;
-    height: 700px;
-    position: relative;
-}
-.footer_left{
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    white-space: pre-line;
-}
-.footer_right{
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    white-space: pre-line;
-}
-.sns{
-    margin-top: 20px;
-    display: flex;
-}
-.sns img{
-    width: 50px;
-    height: 50px;
-    filter: grayscale(100%);
-    transition: 0.3s;
-    padding: 5px;
-}
-.sns img:hover{
-    filter: grayscale(0);
 }
