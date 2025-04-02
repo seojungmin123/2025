@@ -46,7 +46,7 @@ a{
     animation-delay: 0.4s;
     background-color: greenyellow;
 }
-@keyframes loading{
+/* @keyframes loading{
     0%,
     100%{
         opacity: 0;
@@ -61,13 +61,13 @@ a{
     0% {
         opacity: 1;
     }
-    25%{
+    40%{
         opacity: 1;
     }
     100%{
         opacity: 0;
     }
-}
+} */
 /* 헤더 */
 header{
     width: 100%;
