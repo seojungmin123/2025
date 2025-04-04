@@ -1,0 +1,503 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+/* 헤더 */
+header{
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px 2px 10px #00000020;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: #fff;
+}
+.inner{
+    width: 1440px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.logo{
+    width: 200px;
+    height: 100px;
+}
+.logo img{
+    width: 200px;
+    height: 100px;
+}
+nav{
+    margin-right: 100px;
+}
+.main_menu{
+    display: flex;
+}
+.main_menu > li > a{
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    align-content: center;
+}
+.sub_menu > li > a{
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    align-content: center;
+}
+.sub_menu{
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+.mega{
+    width: 100%;
+    height: 0px;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    transition: 0.3s ease-in-out;
+    background-color: #fff;
+    z-index: 10;
+    box-shadow: #00000020 0px 2px 10px;
+}
+#wrap:has(.mega:hover) .sub_menu, nav:hover .sub_menu,
+#wrap:has(nav:hover) .mega, .mega:hover{
+    height: 240px;
+}
+#wrap:has(nav:hover) header, #wrap:has(.mega:hover) header{
+    box-shadow: none;
+}
+#wrap:has(nav:not(:hover)) header{
+    transition-delay: 0.3s;
+}
+.underline{
+    width: 100%;
+    box-shadow: 0 0 0 1px #079ed2;
+    transition: 0.3s;
+    transform: scale(0);
+}
+.main_menu > li:hover .underline{
+    transform: scale(1);
+}
+.sub_menu > li > a:hover{
+    color: #079ed2;
+}
+.util ul{
+    display: flex;
+}
+.util li{
+    align-content: center;
+    height: 100px;
+    padding: 0 10px;
+    position: relative;
+}
+.util li a::after{
+    content: "|";
+    position: absolute;
+    right: 0;
+    color: #999;
+}
+.util a:hover{
+    text-decoration: underline;
+}
+.util li:last-child a::after{
+    display: none;
+}
+
+/* 슬라이더 */
+.slide{
+    margin-top: 100px;
+    font-size: 0;
+    overflow: hidden;
+}
+.slide ul{
+    white-space: nowrap;
+    animation: slide infinite 12s;
+}
+.slide li{
+    width: 100%;
+    height: 700px;
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    background-color: #000;
+}
+.slide img{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    opacity: 0.7;
+}
+.slide_text_box{
+    width: 1440px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 150px;
+    color: #fff;
+}
+.slide_text h2{
+    font-size: 60px;
+}
+.slide .left, .slide .right{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 90px;
+    color: #fff;
+    z-index: 1;
+}
+.left{
+    left: 30px;
+}
+.right{
+    right: 30px;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    28%{
+        transform: translateX(0);
+    }
+    33%{
+        transform: translateX(-100%);
+    }
+    61%{
+        transform: translateX(-100%);
+    }
+    66%{
+        transform: translateX(-200%);
+    }
+    94%{
+        transform: translateX(-200%);
+    }
+    99%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+.slide:hover ul{
+    animation-play-state: paused;
+}
+/* 컨텐츠 */
+section{
+    margin-bottom: 100px;
+}
+.title{
+    width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.title h2{
+    position: relative;
+    padding: 75px 0;
+    font-size: 32px;
+}
+.title h2:after{
+    content: "";
+    background-color: #000;
+    width: 100%;
+    position: absolute;
+    height: 3px;
+    top: 50%;
+    margin-left: 30px;
+}
+
+/* 추천상품 */
+.category_section{
+    background-color: #f7f7f7;
+}
+.category{
+    width: 1440px;
+    margin: 0 auto;
+}
+.category_title{
+    width: 100%;
+    background-color: #282c37;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.category_title h3{
+    font-size: 23px;
+    padding: 20px;
+}
+.sell_list{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+.sell_con{
+    width: 450px;
+    height: 620px;
+    background-color: #fff;
+    z-index: 10;
+    transition: 0.3s;
+}
+.sell_con_img{
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+}
+.sell_con_img img{
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+.sale{
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #079ed2;
+    color: #fff;
+    text-align: center;
+    align-content: center;
+    box-shadow: 0px 2px 10px #00000090;
+}
+.sell_con h4{
+    padding: 20px;
+    font-size: 23px;
+}
+.sell_con p{
+    color: #555;
+    padding: 0 20px;
+}
+.price{
+    padding: 20px;
+    color: rgb(247, 91, 91);
+}
+.price del{
+    color: #999;
+}
+.sell_btn{
+    width: 100%;
+    height: 100px;
+    align-content: center;
+    text-align: center;
+}
+.sell_btn button{
+    width: 140px;
+    height: 50px;
+    font-size: 15px;
+    cursor: pointer;
+    bottom: none;
+    transition: 0.3s;
+}
+.buy{
+    color: #079ed2;
+    background-color: #fff;
+    border: #079ed2 2px solid;
+}
+.cart{
+    color: #fff;
+    background-color: #079ed2;
+    border: #079ed2 2px solid;
+}
+.sell_con img:hover{
+    transform: scale(1.1);
+}
+.sell_btn button:hover{
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+.sell_con:hover{
+    transform: translateY(-2%);
+    box-shadow: 0 2px 10px #00000020;
+}
+/* 공지사항 */
+.notice{
+    width: 1440px;
+    margin: 0 auto;
+}
+.notice_table{
+    width: 100%;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+
+.th_category, .th_date{
+    width: 15%;
+    padding: 25px 0;
+}
+.th_title{
+    width: 70%;
+    padding: 25px 0;
+}
+td{
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+}
+.td_title{
+    text-align: left;
+}
+.notice a:hover{
+    text-decoration: underline;
+}
+.notice_num{
+    width: 150px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #888;
+    padding: 20px 0;
+    position: relative;
+    text-align: center;
+    align-content: center;
+}
+.notice_num a{
+    margin: 0px 3px;
+}
+.notice_right{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    cursor: pointer;
+}
+.notice_left{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    cursor: pointer;
+}
+.notice_num a:first-child{
+    color: #000;
+    text-decoration: underline #888;
+}
+/* 배너 */
+.banner_section{
+    background-color: #f7f7f7;
+}
+.banner{
+    width: 1440px;
+    margin: 0 auto;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.banner li{
+    width: 300px;
+    height: 300px;
+    background-color: #079ed2;
+    color: #fff;
+    position: relative;
+}
+.banner i{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 150px;
+    top: 25px;
+}
+.banner b{
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 25px;
+    bottom: 40px;
+    text-align: center;
+}
+/* 입점문의 */
+.entry{
+    width: 1440px;
+    margin: 0 auto;
+}
+.entry ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.entry li{
+    margin: 20px;
+    width: 300px;
+    height: 130px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 10% 50%, 0 0);
+    transition: 0.3s;
+}
+.step1{
+    background-color: #079ed2;
+}
+.step2{
+    background-color: #068cd2;
+}
+.step3{
+    background-color: #057ac2;
+}
+.step4{
+    background-color: #046ab2;
+}
+.step5{
+    background-color: #0358a2;
+}
+.step6{
+    background-color: #024692;
+}
+.entry li:hover{
+    transform: scale(1.05);
+}
+/* 푸터 */
+footer{
+    width: 100%;
+    background-color: #eee;
+    height: 700px;
+}
+.footer_inner{
+    width: 1440px;
+    height: 700px;
+    position: relative;
+    margin: 0 auto;
+}
+.footer_left{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sns{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+}
+.sns img{
+    width: 50px;
+    height: 50px;
+    transition: 0.3s;
+    filter: grayscale(100%);
+}
+.footer_left, .footer_right{
+    white-space: pre-line;
+}
+.footer_right{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sns img:hover{
+    filter:grayscale(0);
+}
